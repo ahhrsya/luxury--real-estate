@@ -127,7 +127,7 @@
 }
 
 .hero-stats-section {
-  background-color: var(--color-bg);
+  background-color: var(--color-surface); /* Break the flow from hero image */
   padding: var(--space-2xl) 0;
   border-bottom: 1px solid var(--color-divider);
 }
@@ -185,7 +185,7 @@
    ============================================ */
 
 .value-prop {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg); /* Alternate back to deep black */
   border-top: 1px solid var(--color-divider);
   border-bottom: 1px solid var(--color-divider);
 }
@@ -267,7 +267,7 @@
   flex-direction: column;
   justify-content: center;
   padding: var(--space-4xl);
-  background-color: var(--color-surface);
+  background-color: var(--color-surface-2); /* Slightly lighter for contrast */
 }
 
 .experience__content .eyebrow {
@@ -355,7 +355,7 @@
    ============================================ */
 
 .social-proof {
-  background-color: var(--color-surface);
+  background-color: var(--color-surface-2); /* Distinct from about editorial black */
   border-top: 1px solid var(--color-divider);
   border-bottom: 1px solid var(--color-divider);
 }
@@ -393,7 +393,7 @@
    ============================================ */
 
 .team {
-  background-color: var(--color-bg);
+  background-color: var(--color-surface); /* Break up the black stretch before footer */
   border-top: 1px solid var(--color-divider);
 }
 

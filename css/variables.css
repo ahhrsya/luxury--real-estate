@@ -5,11 +5,11 @@
 :root {
   /* ── Colors ── */
   --color-bg:           #0D0C0A;
-  --color-surface:      #131210;
-  --color-surface-2:    #1A1815;
+  --color-surface:      #1A1815;   /* Lightened from #131210 for better visibility */
+  --color-surface-2:    #252220;   /* Lightened from #1A1815 for better visibility */
   --color-text:         #EAE6DF;
-  --color-text-muted:   #908A85;   /* adjusted from #7A7672 for WCAG AA */
-  --color-text-faint:   #424040;
+  --color-text-muted:   #908A85;
+  --color-text-faint:   #5C5956;
   --color-accent:       #B8975A;
   --color-accent-hover: #CEAD74;
   --color-divider:      #252220;
