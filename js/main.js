@@ -14,6 +14,9 @@ function initNavigation() {
   const nav = document.getElementById('nav');
   const hamburger = document.getElementById('navHamburger');
   const overlay = document.getElementById('navMobileOverlay');
+  
+  if (!nav || !hamburger || !overlay) return;
+
   const mobileLinks = overlay.querySelectorAll('.nav__link, .btn');
 
   // Scroll — add background
@@ -101,31 +104,46 @@ function initHeroStagger() {
 
 /* ── Scroll Observer ── */
 function initScrollObserver() {
+  const sections = document.querySelectorAll('.animate-on-scroll');
+  
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    document.querySelectorAll('.animate-on-scroll').forEach(el => {
-      el.classList.add('in-view');
-    });
+    sections.forEach(el => el.classList.add('in-view'));
     return;
   }
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in-view');
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.15,
-      rootMargin: '0px 0px -60px 0px',
-    }
-  );
+  const options = {
+    threshold: 0.1, // Reduced to 10% for earlier triggering
+    rootMargin: '0px', // Removed negative margin to ensure intersection is caught correctly
+  };
 
-  document.querySelectorAll('.animate-on-scroll').forEach(el => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, options);
+
+  sections.forEach(el => {
     observer.observe(el);
+    
+    // Safety check: if the section is already partially in view on load
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      el.classList.add('in-view');
+      observer.unobserve(el);
+    }
   });
+
+  // Global safety: if something is still hidden after 2 seconds, show it
+  setTimeout(() => {
+    sections.forEach(el => {
+      if (!el.classList.contains('in-view')) {
+        el.classList.add('in-view');
+      }
+    });
+  }, 3000);
 }
 
 /* ── Smooth Scroll ── */
