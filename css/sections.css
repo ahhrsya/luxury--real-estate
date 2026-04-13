@@ -286,33 +286,68 @@
    S6: About
    ============================================ */
 
-.about {
+/* ============================================
+   S6: About — Editorial Style
+   ============================================ */
+
+.about-editorial {
+  padding: var(--space-5xl) 0;
   background-color: var(--color-bg);
+  text-align: center;
 }
 
-.about__image-wrap {
-  position: relative;
-  border-radius: var(--radius-md);
+.about-editorial__statement {
+  margin-bottom: var(--space-3xl);
+  padding: 0 var(--container-pad);
+}
+
+.about-editorial h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.inline-img {
+  display: inline-block;
+  vertical-align: middle;
+  width: clamp(60px, 12vw, 150px);
+  height: clamp(40px, 8vw, 100px);
+  margin: 0 0.25em;
+  border-radius: 4px;
   overflow: hidden;
-  aspect-ratio: 4 / 5;
+  position: relative;
+  top: -0.1em;
 }
 
-.about__image {
+.inline-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.5s var(--ease-out);
 }
 
-.about__content .eyebrow {
-  margin-bottom: var(--space-lg);
+.inline-img:hover img {
+  transform: scale(1.1);
 }
 
-.about__content .section-heading {
-  margin-bottom: var(--space-xl);
+.about-editorial__subtext {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
 }
 
-.about__content .body-text {
-  margin-bottom: var(--space-md);
+.about-editorial__subtext p {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.container--narrow {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 /* ============================================
