@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Aurum Estates | Ultra-Premium Real Estate in Dubai & Beyond</title>
+  <meta name="description" content="Curated luxury properties in Dubai, London, and Monaco. Private inquiry, off-market access, and white-glove service for discerning buyers.">
+  <meta property="og:title" content="Aurum Estates | Where Rarity Meets Residence">
+  <meta property="og:description" content="Ultra-premium real estate advisory. $2.4B in transactions. 340+ private clients served.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- ============================================
+       S1: Navigation
+       ============================================ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">Aurum Estates</a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#properties" class="nav__link">Properties</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#team" class="nav__link">Journal</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--gold-outline nav__cta-desktop">Schedule a Viewing</a>
+
+      <button class="nav__hamburger" id="navHamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Overlay -->
+    <div class="nav__mobile-overlay" id="navMobileOverlay">
+      <a href="#properties" class="nav__link">Properties</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#services" class="nav__link">Services</a>
+      <a href="#team" class="nav__link">Journal</a>
+      <a href="#contact" class="nav__link">Contact</a>
+      <a href="#contact" class="btn btn--gold-outline" style="margin-top: 1rem;">Schedule a Viewing</a>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ============================================
+         S2: Hero
+         ============================================ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <img src="assets/images/hero-bg.png" alt="Luxury penthouse interior with Dubai skyline view" loading="eager">
+      </div>
+
+      <div class="hero__content">
+        <p class="eyebrow hero__eyebrow">Exclusively Curated by Aurum Estates</p>
+
+        <h1 class="display-headline hero__headline" id="heroHeadline">
+          Where <em>Rarity</em><br>Meets <em>Residence.</em>
+        </h1>
+
+        <p class="body-text hero__body">
+          A curated portfolio of ultra-premium properties across Dubai,
+          London, and Monaco. For those who seek more than an address.
+          They seek a statement.
+        </p>
+
+        <div class="hero__ctas">
+          <a href="#contact" class="btn btn--primary">Schedule a Private Viewing</a>
+          <a href="#properties" class="btn btn--secondary">Explore Properties</a>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="hero__scroll">
+        <div class="hero__scroll-line"></div>
+      </div>
+
+      <!-- Stat Strip -->
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <div class="hero__stat-value">$2.4B+</div>
+          <div class="hero__stat-label">Transacted</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value">340+</div>
+          <div class="hero__stat-label">Private Clients</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value">12</div>
+          <div class="hero__stat-label">Years of Excellence</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         S3: Value Proposition Strip
+         ============================================ -->
+    <section class="value-prop animate-on-scroll" id="valueProp">
+      <div class="container">
+        <div class="value-prop__grid">
+          <div class="value-prop__item" data-stagger="1">
+            <h3 class="value-prop__heading">Curated Exclusivity</h3>
+            <p class="value-prop__text">Only properties that meet our standards of architecture, privacy, and prestige enter our portfolio.</p>
+          </div>
+          <div class="value-prop__item" data-stagger="2">
+            <h3 class="value-prop__heading">White-Glove Service</h3>
+            <p class="value-prop__text">From first inquiry to final signature, a dedicated concierge guides every step of your journey.</p>
+          </div>
+          <div class="value-prop__item" data-stagger="3">
+            <h3 class="value-prop__heading">Proven Intelligence</h3>
+            <p class="value-prop__text">Deep market expertise across four continents and $2.4B in successfully closed transactions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         S4: Featured Properties
+         ============================================ -->
+    <section class="properties animate-on-scroll" id="properties">
+      <div class="container">
+        <div class="properties__header">
+          <p class="eyebrow">Featured Properties</p>
+          <h2 class="section-heading" style="margin-top: 0.75rem;">A Selection of <em>Distinction.</em></h2>
+        </div>
+
+        <div class="grid-properties">
+          <!-- Featured Large Card -->
+          <div class="property-card property-card--featured" data-stagger="1">
+            <div class="property-card__image-wrap">
+              <img src="assets/images/property-1.png" alt="Penthouse XXIII, Palm Jumeirah" class="property-card__image" loading="lazy">
+              <div class="property-card__overlay"></div>
+              <span class="property-card__badge">New Release</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">Penthouse XXIII, Palm Jumeirah</h3>
+              <p class="property-card__tagline">Above the city. Beyond imagination.</p>
+              <p class="property-card__details">4 Bedrooms  ·  6,200 sqft  ·  Private Infinity Pool</p>
+              <a href="#" class="link-gold">View Residence →</a>
+            </div>
+          </div>
+
+          <!-- Stacked Card 1 -->
+          <div class="property-card" data-stagger="2">
+            <div class="property-card__image-wrap">
+              <img src="assets/images/property-2.png" alt="The Residences, Dubai Marina" class="property-card__image" loading="lazy">
+              <div class="property-card__overlay"></div>
+              <span class="property-card__badge">Off-Market</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">The Residences, Dubai Marina</h3>
+              <p class="property-card__tagline">Where the city meets the sea.</p>
+              <p class="property-card__details">3 Bedrooms  ·  4,800 sqft  ·  Full Marina View</p>
+              <a href="#" class="link-gold">View Residence →</a>
+            </div>
+          </div>
+
+          <!-- Stacked Card 2 -->
+          <div class="property-card" data-stagger="3">
+            <div class="property-card__image-wrap">
+              <img src="assets/images/property-3.png" alt="Villa Serene, Emirates Hills" class="property-card__image" loading="lazy">
+              <div class="property-card__overlay"></div>
+              <span class="property-card__badge">Price Upon Request</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">Villa Serene, Emirates Hills</h3>
+              <p class="property-card__tagline">A sanctuary within the city.</p>
+              <p class="property-card__details">6 Bedrooms  ·  12,400 sqft  ·  Private Garden Estate</p>
+              <a href="#" class="link-gold">View Residence →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         S5: The Experience
+         ============================================ -->
+    <section class="experience animate-on-scroll" id="experience">
+      <div class="experience__inner">
+        <div class="experience__image-wrap">
+          <img src="assets/images/lifestyle.png" alt="Dramatic luxury architecture interior" class="experience__image" loading="lazy">
+        </div>
+        <div class="experience__content">
+          <p class="eyebrow">The Aurum Standard</p>
+          <h2 class="section-heading">This Is Not Just a Home.<br><em>It Is How You Choose to Live.</em></h2>
+          <p class="body-text body-text--lg">
+            The right residence does not only shelter you. It reflects who you are
+            and amplifies everything you have built. Every corner of these properties
+            is a deliberate statement: in material, in light, in silence.
+          </p>
+          <p class="body-text body-text--lg">
+            Step into a lobby that commands respect. Wake up to views that recalibrate
+            your sense of scale. Entertain in spaces that turn guests into believers.
+          </p>
+          <p class="body-text body-text--lg" style="margin-bottom: var(--space-xl);">
+            This is what living at the top genuinely feels like.
+          </p>
+          <a href="#" class="link-gold">Discover Our Philosophy →</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         S6: About
+         ============================================ -->
+    <section class="about animate-on-scroll" id="about">
+      <div class="container">
+        <div class="split split--45-55">
+          <div class="about__image-wrap" data-stagger="1">
+            <img src="assets/images/about.png" alt="Aurum Estates Dubai office" class="about__image" loading="lazy">
+          </div>
+          <div class="about__content" data-stagger="2">
+            <p class="eyebrow">Our Story</p>
+            <h2 class="section-heading">Built on <em>Conviction.</em><br>Guided by <em>Taste.</em></h2>
+            <p class="body-text">
+              Aurum Estates was founded with a single conviction: that finding the
+              right home should feel as considered as any great life decision.
+            </p>
+            <p class="body-text">
+              Over the past twelve years, we have advised clients across four
+              continents on acquisitions ranging from private beachfront estates
+              in Zanzibar to sky residences above the Dubai skyline. What has
+              remained constant is our refusal to treat real estate as a
+              transaction. Every client deserves undivided attention, honest
+              counsel, and access to opportunities that rarely reach the open market.
+            </p>
+            <p class="body-text">
+              We do not measure success by volume. We measure it by the moment a
+              client walks into a property and knows, without a word, that this is the one.
+            </p>
+
+            <div class="trust-points">
+              <div class="trust-point">
+                <svg class="trust-point__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+                <p class="trust-point__text">Founded in 2013. Trusted by over 340 private clients across 18 nationalities.</p>
+              </div>
+              <div class="trust-point">
+                <svg class="trust-point__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+                <p class="trust-point__text">Offices in Dubai, London, and Monaco. Advisory reach across four continents.</p>
+              </div>
+              <div class="trust-point">
+                <svg class="trust-point__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                </svg>
+                <p class="trust-point__text">Strict confidentiality protocols. Every inquiry is protected by a full NDA.</p>
+              </div>
+            </div>
+
+            <a href="#team" class="btn btn--gold-outline" style="margin-top: var(--space-xl); align-self: flex-start;">Meet Our Team →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         S7: Social Proof
+         ============================================ -->
+    <section class="social-proof animate-on-scroll" id="socialProof">
+      <div class="container">
+
+        <!-- Stats Row -->
+        <div class="social-proof__stats">
+          <div class="stat-block" data-stagger="1">
+            <div class="stat-block__number" data-count="2.4">$2.4B+</div>
+            <div class="stat-block__label">Properties Sold</div>
+          </div>
+          <div class="stat-block" data-stagger="2">
+            <div class="stat-block__number" data-count="340">340+</div>
+            <div class="stat-block__label">Private Clients</div>
+          </div>
+          <div class="stat-block" data-stagger="3">
+            <div class="stat-block__number" data-count="12">12</div>
+            <div class="stat-block__label">Years of Excellence</div>
+          </div>
+          <div class="stat-block" data-stagger="4">
+            <div class="stat-block__number" data-count="98">98%</div>
+            <div class="stat-block__label">Client Satisfaction</div>
+          </div>
+        </div>
+
+        <!-- Testimonial -->
+        <div class="social-proof__testimonial">
+          <div class="testimonial__quote-mark">"</div>
+          <blockquote class="testimonial__text">
+            Working with Aurum changed my understanding of what service means.
+            They did not just find me a property. They found me the right life.
+          </blockquote>
+          <div class="testimonial__author">
+            <strong>Khalid Al-Mansouri</strong>
+            Private Equity Executive, Abu Dhabi
+          </div>
+        </div>
+
+        <!-- Partner Logos -->
+        <div class="partner-logos">
+          <span class="partner-logos__item">Forbes</span>
+          <span class="partner-logos__item">Financial Times</span>
+          <span class="partner-logos__item">Arabian Business</span>
+          <span class="partner-logos__item">Sotheby's</span>
+          <span class="partner-logos__item">Christie's</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         S8: Why Choose Us
+         ============================================ -->
+    <section class="why-us animate-on-scroll" id="services">
+      <div class="container">
+        <div class="split split--45-55">
+          <div class="why-us__content" data-stagger="1">
+            <p class="eyebrow">Our Approach</p>
+            <h2 class="section-heading">An <em>Advisor,</em><br>Not Just an Agent.</h2>
+            <p class="body-text">
+              Most real estate firms show you what is available. We show you what is right.
+              Our approach is research-first, relationship-driven, and built around one
+              principle: your outcome matters more than our commission.
+            </p>
+          </div>
+          <div class="advantage-list" data-stagger="2">
+            <div class="advantage-item">Off-market access to exclusive listings</div>
+            <div class="advantage-item">Full legal and due diligence support</div>
+            <div class="advantage-item">Multi-currency and cross-border transaction expertise</div>
+            <div class="advantage-item">Post-purchase property management available</div>
+            <div class="advantage-item">Strict privacy and NDA protocols for all clients</div>
+            <div class="advantage-item">Dedicated single point of contact throughout the process</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         S9: Meet the Team
+         ============================================ -->
+    <section class="team animate-on-scroll" id="team">
+      <div class="container">
+        <div class="team__header">
+          <p class="eyebrow">Our Advisors</p>
+          <h2 class="section-heading">Meet the <em>Team.</em></h2>
+        </div>
+
+        <div class="grid-3">
+          <div class="team-card" data-stagger="1">
+            <div class="team-card__photo-wrap">
+              <img src="assets/images/team-1.png" alt="Alexandra Voss" class="team-card__photo" loading="lazy">
+            </div>
+            <h3 class="team-card__name">Alexandra Voss</h3>
+            <p class="team-card__title">Senior Property Advisor</p>
+            <p class="team-card__spec">Ultra-premium residential · Dubai Marina · Palm Jumeirah</p>
+            <p class="team-card__quote">"Every client deserves undivided attention and a home they will never want to leave."</p>
+            <a href="#contact" class="link-gold">Connect with Alexandra →</a>
+          </div>
+
+          <div class="team-card" data-stagger="2">
+            <div class="team-card__photo-wrap">
+              <img src="assets/images/team-2.png" alt="Omar Al-Rashid" class="team-card__photo" loading="lazy">
+            </div>
+            <h3 class="team-card__name">Omar Al-Rashid</h3>
+            <p class="team-card__title">Director of Acquisitions</p>
+            <p class="team-card__spec">Off-market deals · Emirates Hills · Investment portfolios</p>
+            <p class="team-card__quote">"The best opportunities are the ones you will never see on a listing site."</p>
+            <a href="#contact" class="link-gold">Connect with Omar →</a>
+          </div>
+
+          <div class="team-card" data-stagger="3">
+            <div class="team-card__photo-wrap">
+              <img src="assets/images/team-3.png" alt="Priya Mehta" class="team-card__photo" loading="lazy">
+            </div>
+            <h3 class="team-card__name">Priya Mehta</h3>
+            <p class="team-card__title">Client Relations Lead</p>
+            <p class="team-card__spec">Cross-border transactions · London · Monaco relocation</p>
+            <p class="team-card__quote">"Real estate is personal. I treat every decision as if it were my own."</p>
+            <a href="#contact" class="link-gold">Connect with Priya →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         S10: CTA Section (The Close)
+         ============================================ -->
+    <section class="cta-section animate-on-scroll" id="contact">
+      <div class="container">
+        <div class="cta-section__inner">
+          <p class="eyebrow">Private Access</p>
+          <h2 class="section-heading">The Finest Properties Are Reserved<br>for Those Who <em>Ask First.</em></h2>
+          <p class="body-text">
+            Many of our most exclusive listings never reach the open market. Share your
+            preferences below and we will match you with properties suited to your vision.
+          </p>
+
+          <form class="cta-form" id="inquiryForm">
+            <div class="form-group">
+              <label class="form-label" for="fullName">Full Name</label>
+              <input type="text" id="fullName" class="form-input" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input type="email" id="email" class="form-input" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input type="tel" id="phone" class="form-input" placeholder="+971 XX XXX XXXX">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="budget">Budget Range</label>
+              <select id="budget" class="form-select" required>
+                <option value="" disabled selected>Select your range</option>
+                <option value="1-5m">$1M – $5M</option>
+                <option value="5-10m">$5M – $10M</option>
+                <option value="10-25m">$10M – $25M</option>
+                <option value="25m+">$25M+</option>
+              </select>
+            </div>
+            <div class="form-group form-group--full">
+              <label class="form-label" for="propertyType">Property Type</label>
+              <select id="propertyType" class="form-select">
+                <option value="" disabled selected>Select type</option>
+                <option value="penthouse">Penthouse</option>
+                <option value="villa">Villa</option>
+                <option value="apartment">Apartment</option>
+                <option value="estate">Estate</option>
+                <option value="commercial">Commercial</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn--primary cta-form__submit" id="submitBtn">
+              Request Private Access
+            </button>
+          </form>
+
+          <div class="cta-form__success" id="formSuccess">
+            <p>Received. We will be in touch.</p>
+          </div>
+
+          <p class="cta-section__microcopy">
+            Your information is treated with complete confidentiality.<br>
+            No unsolicited communications, ever.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================
+       S11: Footer
+       ============================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Col 1: Brand -->
+        <div>
+          <div class="footer__brand-name">Aurum Estates</div>
+          <p class="footer__tagline">Redefining the Meaning of Home.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Properties -->
+        <div>
+          <h4 class="footer__col-title">Properties</h4>
+          <div class="footer__col-links">
+            <a href="#">Featured Listings</a>
+            <a href="#">Off-Market Portfolio</a>
+            <a href="#">New Releases</a>
+            <a href="#">Property Search</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Company -->
+        <div>
+          <h4 class="footer__col-title">Company</h4>
+          <div class="footer__col-links">
+            <a href="#about">About Us</a>
+            <a href="#team">Our Team</a>
+            <a href="#services">Services</a>
+            <a href="#">Journal</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div>
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-line">
+            <strong style="color: var(--color-text);">Dubai Office</strong><br>
+            Level 42, One Za'abeel Tower<br>
+            +971 4 XXX XXXX<br>
+            hello@aurumestates.com
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Base Bar -->
+      <div class="footer__bar">
+        <span>© 2026 Aurum Estates. All rights reserved.</span>
+        <div class="footer__bar-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">RERA License No. XXXXX</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

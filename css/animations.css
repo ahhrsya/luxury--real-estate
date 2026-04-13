@@ -1,0 +1,151 @@
+/* ============================================
+   AURUM ESTATES — Animations
+   ============================================ */
+
+/* ── Scroll-Triggered Fade In ── */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--duration-slow) var(--ease-out),
+              transform var(--duration-slow) var(--ease-out);
+}
+
+.animate-on-scroll.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children */
+.animate-on-scroll.in-view [data-stagger] {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeInUp var(--duration-slow) var(--ease-out) forwards;
+}
+
+.animate-on-scroll.in-view [data-stagger="1"] { animation-delay: 100ms; }
+.animate-on-scroll.in-view [data-stagger="2"] { animation-delay: 200ms; }
+.animate-on-scroll.in-view [data-stagger="3"] { animation-delay: 300ms; }
+.animate-on-scroll.in-view [data-stagger="4"] { animation-delay: 400ms; }
+.animate-on-scroll.in-view [data-stagger="5"] { animation-delay: 500ms; }
+.animate-on-scroll.in-view [data-stagger="6"] { animation-delay: 600ms; }
+
+/* ── Keyframes ── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Gold Line Grow ── */
+.gold-line-animated {
+  position: relative;
+}
+
+.gold-line-animated::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background-color: var(--color-accent);
+  transition: width 1s var(--ease-out);
+}
+
+.gold-line-animated.in-view::after {
+  width: 100%;
+}
+
+/* ── Hero Word Stagger ── */
+@keyframes wordReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero__headline .word.revealed {
+  animation: wordReveal var(--duration-slow) var(--ease-out) forwards;
+}
+
+/* ── Scroll Bounce Indicator ── */
+@keyframes scrollBounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-50%) translateY(8px);
+    opacity: 0.5;
+  }
+}
+
+/* ── Counter Animation ── */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.stat-block.in-view .stat-block__number {
+  animation: countUp var(--duration-slow) var(--ease-out) forwards;
+}
+
+/* ── Form Submit Transition ── */
+.btn--submitting {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.btn--success {
+  background-color: #2D5A3D;
+  pointer-events: none;
+}
+
+/* ── Accessibility: Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .animate-on-scroll.in-view [data-stagger] {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero__headline .word {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero__headline .word.revealed {
+    animation: none;
+  }
+
+  .gold-line-animated::after {
+    width: 100%;
+    transition: none;
+  }
+
+  .hero__scroll {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

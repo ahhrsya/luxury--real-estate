@@ -1,0 +1,188 @@
+/* ============================================
+   AURUM ESTATES — Base & Typography
+   ============================================ */
+
+/* ── Reset ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ── Selection ── */
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* ── Scrollbar (WebKit) ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
+/* ── Accessibility ── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ============================================
+   Typography Classes
+   ============================================ */
+
+/* Hero Display */
+.display-headline {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--text-hero);
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+  color: var(--color-text);
+}
+
+.display-headline em,
+.display-headline i {
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+/* Section Heading */
+.section-heading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-section);
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: var(--color-text);
+}
+
+.section-heading em,
+.section-heading i {
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* Sub-heading */
+.sub-heading {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--text-sub);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  color: var(--color-text);
+}
+
+/* Eyebrow / Label */
+.eyebrow {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  line-height: 1.4;
+}
+
+/* Body Text */
+.body-text {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--text-base);
+  letter-spacing: 0;
+  line-height: 1.75;
+  color: var(--color-text-muted);
+}
+
+.body-text--lg {
+  font-size: var(--text-lg);
+  line-height: 1.8;
+}
+
+/* ── Gold Divider ── */
+.gold-divider {
+  width: 60px;
+  height: 1px;
+  background-color: var(--color-accent);
+  border: none;
+}
+
+.gold-divider--full {
+  width: 100%;
+}
+
+/* ── Section Wrapper ── */
+section {
+  padding-top: var(--section-spacing);
+  padding-bottom: var(--section-spacing);
+}

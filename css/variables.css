@@ -1,0 +1,66 @@
+/* ============================================
+   AURUM ESTATES — Design Tokens
+   ============================================ */
+
+:root {
+  /* ── Colors ── */
+  --color-bg:           #0D0C0A;
+  --color-surface:      #131210;
+  --color-surface-2:    #1A1815;
+  --color-text:         #EAE6DF;
+  --color-text-muted:   #908A85;   /* adjusted from #7A7672 for WCAG AA */
+  --color-text-faint:   #424040;
+  --color-accent:       #B8975A;
+  --color-accent-hover: #CEAD74;
+  --color-divider:      #252220;
+  --color-border:       #2E2B27;
+
+  /* ── Typography ── */
+  --font-display: 'Playfair Display', 'PP Editorial New', Georgia, serif;
+  --font-body:    'Satoshi', system-ui, -apple-system, sans-serif;
+
+  /* ── Type Scale ── */
+  --text-hero:    clamp(3.5rem, 7vw, 7rem);
+  --text-section: clamp(2.5rem, 4.5vw, 4.5rem);
+  --text-sub:     clamp(1.5rem, 2.5vw, 2.5rem);
+  --text-xl:      clamp(1.25rem, 2vw, 1.75rem);
+  --text-lg:      1.125rem;
+  --text-base:    1rem;
+  --text-sm:      0.875rem;
+  --text-xs:      0.75rem;
+
+  /* ── Spacing Scale ── */
+  --space-xs:   0.5rem;
+  --space-sm:   1rem;
+  --space-md:   1.5rem;
+  --space-lg:   2rem;
+  --space-xl:   3rem;
+  --space-2xl:  4rem;
+  --space-3xl:  6rem;
+  --space-4xl:  8rem;
+  --space-5xl:  10rem;
+
+  /* ── Layout ── */
+  --container-max:    1400px;
+  --container-pad:    clamp(1.5rem, 4vw, 4rem);
+  --section-spacing:  clamp(5rem, 10vw, 10rem);
+
+  /* ── Transitions ── */
+  --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:  cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast:   200ms;
+  --duration-base:   400ms;
+  --duration-slow:   600ms;
+  --duration-reveal: 800ms;
+
+  /* ── Borders ── */
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  12px;
+  --radius-pill: 100px;
+
+  /* ── Z-Index ── */
+  --z-nav:     1000;
+  --z-overlay: 900;
+  --z-modal:   1100;
+}
