@@ -8,10 +8,11 @@
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
+  height: 100dvh; /* Dynamic viewport height for modern browsers */
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding-top: 0;
   padding-bottom: 0;
   overflow: hidden;
